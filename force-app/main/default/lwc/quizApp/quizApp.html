@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="quiz app">
+        <div class="slds-m-around_medium">
+            <template for:each={myQuestions} for:item="quiz">
+                <div key={quiz.id}>
+                    <div><strong>{quiz.id} - {quiz.question}</strong></div>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col">
+                            {quiz. answare.a}
+                     
+                        </div>
+                        <div class="slds-col">
+                            {quiz.answare.b}
+                        
+                        </div>
+                        <div class="slds-col">
+                            {quiz.answare.c}
+                       
+                       
+                        </div>
+                        </div>
+                </div>
+            </template>
+        </div>
+        
+    </lightning-card>
+</template>
